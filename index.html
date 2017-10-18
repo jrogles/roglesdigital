@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -21,23 +22,25 @@
 
         <header role=banner>
             <h1><!--<button></button>--><a href=index.html>Rogles Digital, LLC</a></h1>
-            <nav role=navigation>
+            <nav role=navigation class="row">
                 <!--<a href=index.html>Home</a>-->
-                <a href=#services>Services</a>
-                <a href=/work/>Work</a>
-                <a href=about.html>About</a>
-                <a href=contact.html>Contact</a>
+                <a href=#services class="col-xs-3">Services</a>
+                <a href=/work/ class="col-xs-3">Work</a>
+                <a href=about.html class="col-xs-3">About</a>
+                <a href=contact.html class="col-xs-3">Contact</a>
               </nav>
         </header>
         <main>
             <section id="intro" class="intro">
-                <h1>Strategy Design Develop</h1>
+                <h1><span>Strategy</span> <span>Design</span> <span>Develop</span></h1>
                 <p>Rogles Digital is an effecient digital shop focused on improving the bottom line of you and your customers. We research, plan, and execute effective experiences in less time with better results.</p>
             </section>
 
             <section id="services" class="services">
                 <h1>Services</h1>
-                <section>
+                <div class="row">
+                    <section class="col-xs-12 col-md-4">
+                    <div>
                     <h2>User Experience (UX)</h2>
                     <ul>
                         <li>Project Visioning &amp; Scope</li>
@@ -47,8 +50,10 @@
                         <li>Usability Testing</li>
                         <li>Accessibility &amp; WCAG 2.0 Compliance</li>
                     </ul>
-                </section>
-                <section>
+                    </div>
+                    </section>
+                    <section class="col-xs-12 col-md-4">
+                    <div>
                     <h2>Consulting</h2>
                     <ul>
                         <li>Digital Marketing Strategy</li>
@@ -57,8 +62,10 @@
                         <li>Project Creation &amp; Management</li>
                         <li>Start-up Marketing Direction</li>
                     </ul>
-                </section>
-                <section>
+                    </div>
+                    </section>
+                    <section class="col-xs-12 col-md-4">
+                    <div>
                     <h2>Design and Development</h2>
                     <ul>
                         <li>User Interface Design</li>
@@ -67,12 +74,16 @@
                         <li>Website Development</li>
                         <li>Front-end Web Development</li>
                     </ul>
-                </section>
+                    </div>
+                    </section>
+                </div>
             </section>
 
             <section id="section-links" class="wh-btns">
-                <div><a href="/work/">See some example work</a></div>
-                <div><a href="about.html">See what we're about</a></div>
+                <div class="row">
+                <div class="col-xs-12 col-sm-6"><a href="/work/">See some example work</a></div>
+                <div class="col-xs-12 col-sm-6"><a href="about.html">See what we're about</a></div>
+                </div>
             </section>
 
             <section id="contact" class="gr-btns">
