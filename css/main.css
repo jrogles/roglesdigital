@@ -98,12 +98,12 @@ textarea {
    ========================================================================== */
 
 body {background-color: #363942;background: url(../img/hex.svg) 31px 56px/5.5%  #363942;}
-body > header, body > footer, main {background-color: #363942;background-color: rgba(54,57,66,.9)}
+body > header, body > footer, main {background-color: #363942;background-color: rgba(54,57,66,.95)}
 section {position: relative;}
 main {}
+footer {padding: 2em;}
 main section {padding: 2em;max-width: 1280px;margin: 0 auto;}
 main section section {padding: 0;}
-
 
 h1,h2,h3,h4,h5,h6,p,li,a {font-family: "Ropa Sans Pro", Helvetica, Arial;color: #ffffff}
 
@@ -132,7 +132,7 @@ header[role="banner"] button::after {
     background-color: rgba(190,215,60,.9);
 }*/
 header[role="banner"] h1 {font-size: 1.25em;font-weight:400;margin: 0;text-align: center;padding: 4px}
-header[role="banner"] nav[role="navigation"] {/*display: none;*/}
+header[role="banner"] nav[role="navigation"] {margin: 0 auto;max-width: 1280px}
 header[role="banner"] nav[role="navigation"] a {
     cursor:pointer;
     text-align: center;
@@ -141,7 +141,7 @@ header[role="banner"] nav[role="navigation"] a {
 }
 
 
-footer {padding: 2em;border-top: 2px solid #ffffff}
+footer {border-top: 2px solid #ffffff}
 footer p {font-size: 1.15em;color: #BED73C;text-align: center;margin: 0}
 
 main h1 {font-size: 2.5em;font-weight: 900;text-align: center;margin-top:0;}
@@ -207,6 +207,8 @@ section section p, section section li {color: #363942}
 @media (min-width: 64em) {
    .services ul li {font-size: .75em;}
    .services section ul {padding: 1em 1em 1em 1.25em;margin: 0;}
+   footer {padding: 1em;}
+   footer p {font-size: .75em}
 }
 @media (min-width: 80em) {
     html {font-size: 2em}
