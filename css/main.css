@@ -115,7 +115,7 @@ h5 {font-size: 0.875em} /*14*/
 h6 {font-size: 0.750em} /*12*/
 p {font-size:  0.813em; color: #FFFFFF} /*13*/
 li {font-size: 0.813em}
-a {text-decoration: none;}
+a {text-decoration: none;cursor: pointer}
 
 /*header[role="banner"] {}
 header[role="banner"] button {display: inline-block;height: 24px;width: 24px;}
@@ -175,10 +175,16 @@ section section p, section section li {color: #363942}
     right: 0;
     top: 0;
     background-color: #BED73C;
-    background-color: rgba(190,215,60,.9);
+    background-color: rgba(190,215,60,1);
+    transition: .125s ease-in-out;
+}
+.wh-btns a:hover::after, .wh-btns a:active::after {
+    background-color: rgba(190,215,60,.75);
+    transition: .25s ease-in-out;
 }
 .gr-btns {padding-bottom: 3.125em;}
-.gr-btns a {background-color: #BED73C;background-color: rgba(190,215,60,.95);display: block;}
+.gr-btns a {background-color: #BED73C;background-color: rgba(190,215,60,.8);display: block;transition: .125s ease-in-out;}
+.gr-btns a:hover,.gr-btns a:active {background-color: rgba(190,215,60,1);transition: .25s ease-in-out;}
 .gr-btns h2 {font-size: 1.875em;color: #ffffff;margin: 0;padding: 2px;}
 
 @media 
@@ -199,7 +205,7 @@ section section p, section section li {color: #363942}
 
 }
 @media (min-width: 64em) {
-   .services ul li {font-size: .5em;}
+   .services ul li {font-size: .75em;}
    .services section ul {padding: 1em 1em 1em 1.25em;margin: 0;}
 }
 @media (min-width: 80em) {
