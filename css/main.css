@@ -201,11 +201,12 @@ section section p, section section li {color: #363942}
 .about ul {list-style: none;text-align: center;padding:0;}
 
 /* contact */
-.contact-form input {
-    display: block;
+input, select, textarea{
     width: 100%;
+    display: block;
     height: 34px;
-    padding: 6px 12px;
+    padding: .5em 1em;
+    margin-bottom: 1em;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
@@ -218,9 +219,8 @@ section section p, section section li {color: #363942}
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
 }
-textarea, select {width: 100%;}
-input, select, textarea {margin-bottom: 1em;}
 textarea {height: 10em;font-size: .75em}
 select {color: #363942;font-size: .850em}
 
