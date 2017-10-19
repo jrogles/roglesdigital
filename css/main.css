@@ -204,10 +204,10 @@ section section p, section section li {color: #363942}
 input, select, textarea{
     width: 100%;
     display: block;
-    height: 34px;
+    height: 2em;
     padding: .5em 1em;
     margin-bottom: 1em;
-    font-size: 14px;
+    font-size: .850em;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -222,7 +222,7 @@ input, select, textarea{
     -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
 }
 textarea {height: 10em;font-size: .75em}
-select {color: #363942;font-size: .850em}
+option {color: #363942;font-size: .850em}
 form button {margin-top: 1em;}
 
 
