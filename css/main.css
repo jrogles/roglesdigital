@@ -199,6 +199,7 @@ section section p, section section li {color: #363942}
 /* about */
 .about p, .about li {color: #fff;}
 .about ul {list-style: none;text-align: center;padding:0;}
+.philosophy h2 {text-align: left;}
 
 /* contact */
 input, select, textarea{
