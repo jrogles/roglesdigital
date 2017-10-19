@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Home | Services</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,16 +23,16 @@
         <header role=banner>
             <h1><!--<button></button>--><a href=index.html>Rogles Digital, LLC</a></h1>
             <nav role=navigation class="row">
-                <a href="#services" class="col-xs-3">Services</a>
-                <a href="" class="col-xs-3">Work</a>
-                <a href="" class="col-xs-3">About</a>
-                <a href="" class="col-xs-3">Contact</a>
+                <a href="#services" class="col-xs-3 active">Services</a>
+                <a href="work/work.html" class="col-xs-3">Work</a>
+                <a href="about.html" class="col-xs-3">About</a>
+                <a href="contact.html" class="col-xs-3">Contact</a>
               </nav>
         </header>
         <main>
             <section id="intro" class="intro">
                 <h1><span>Strategy</span> <span>Design</span> <span>Develop</span></h1>
-                <p>Rogles Digital is an effecient digital shop focused on improving the bottom line of you and your customers. We research, plan, and execute effective experiences in less time with better results.</p>
+                <p>Maximize your investment. Capitalize on the future. Rogles Digital crafts bespoke solutions that offer better experiences for customers and businesses alike. </p>
             </section>
 
             <section id="services" class="services">
@@ -80,13 +80,13 @@
 
             <section id="section-links" class="wh-btns">
                 <div class="row">
-                <div class="col-xs-12 col-sm-6"><a href="/work/">See some example work</a></div>
-                <div class="col-xs-12 col-sm-6"><a href="about.html">See what we're about</a></div>
+                    <div class="col-xs-12 col-sm-6"><a href="/work/">See some example work</a></div>
+                    <div class="col-xs-12 col-sm-6"><a href="about.html">See what we're about</a></div>
                 </div>
             </section>
 
             <section id="contact" class="gr-btns">
-                <a href="contact.html"><h2>Get in Contact</h2></a>
+                <a href="contact.html" class="gr-btn"><h2>Get in Contact</h2></a>
             </section>
         </main>
         
@@ -101,11 +101,14 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108399542-1"></script>
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-108399542-1');
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>

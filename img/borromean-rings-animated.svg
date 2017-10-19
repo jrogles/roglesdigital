@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1574.54 114.297 806.162 811.405"><defs>
+<filter id="f1">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
+    <feOffset dx="2" dy="8" />
+    <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+	<style>.a{opacity:0.75;}.b{fill:none;stroke:#acebae;stroke-width:9px;}/* animation */
+.rotation-animation{
+  animation: rotateRings ease-in-out 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 50%;
+  -webkit-animation: rotateRings ease-in-out 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-direction: alternate;
+}
+
+@keyframes rotateRings{
+  0% {
+    transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    transform:  rotate(180deg) scaleX(0.75) scaleY(0.75) ;
+  }
+  100% {
+    transform:  rotate(360deg) scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+@-webkit-keyframes rotateRings {
+  0% {
+    -webkit-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+  }
+  50% {
+    -webkit-transform:  rotate(180deg) scaleX(0.75) scaleY(0.75) ;
+  }
+  100% {
+    -webkit-transform:  rotate(360deg) scaleX(1.00) scaleY(1.00) ;
+  }
+}
+
+
+}</style></defs><g class="rotation-animation" filter="url(#f1)"><g class="a" transform="translate(1644.087 183.848)"><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(152.384 82.143) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(-63.844 155.125) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(106.733 303.613) rotate(-18.651)"/></g></g></svg>

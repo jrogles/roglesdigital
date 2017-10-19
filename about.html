@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>About</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -20,103 +21,109 @@
         <![endif]-->
 
         <header role=banner>
-            <h1><a href=index.html><img src="images/svg/.icon.svg"></a>Rogles Digital</h1>
-            <nav role=navigation>
-                <a href=index.html>Home</a>
-                <a href=#services>Services</a>
-                <a href=/work/>Work</a>
-                <a href=about.html>About</a>
-                <a href=contact.html>Contact</a>
+            <h1><!--<button></button>--><a href=index.html>Rogles Digital, LLC</a></h1>
+            <nav role=navigation class="row">
+                <a href="index.html#services" class="col-xs-3">Services</a>
+                <a href="work/work.html" class="col-xs-3">Work</a>
+                <a href="about.html" class="col-xs-3 active">About</a>
+                <a href="contact.html" class="col-xs-3">Contact</a>
               </nav>
         </header>
-
-        <main>
-            <section id="about">
+        <main class="about">
+            <section id="bio" class="bio">
                 <h1>About</h1>
-                <section>
-                    <h2>What we are</h2>
-                    <p>Rogles Digital is a digital-agency  offering various services from research and strategy to final execution. We have the chops to bring any idea to market.</p>
-                    <p>Not limited to marketing, we bring user-first expertise to any project.</p>
-                </section>
-                <section>
-                    <h2>Why we're special</h2>
-                    <p>We act as an embedded partner that works directly with your company to provide the most personalized services.</p>
-                    <p>Everything we do is grounded  in user experience research to create the most effective designs and experiences for any customer segments.</p>
-                </section>
-                <section>
-                    <h2>Who we are</h2>
-                    <ul>
-                        <li>Jonathon Rogles, Founder</li>
-                        <li>User Experience Specialist</li>
-                        <li>Designer</li>
-                        <li>Full-Stack Developer</li>
-                        <li>Digital Marketing Strategist</li>
-                    </ul>
-                </section>
+                <div class="row">
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>What we are</h2>
+                        <p>Rogles Digital is a one-stop digital shop offering various services from research and strategy to final execution. We have the chops to bring any idea to market.</p>
+                        <p>Not limited to marketing, we bring user-first expertise to any project.</p>
+                    </section>
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>Why we're special</h2>
+                        <p>We act as an embedded partner that works directly with your company to provide the most personalized services as effeciently as possible.</p>
+                        <p>Everything we do is grounded in user experience research to create the most effective designs and experiences for any customer segments.</p>
+                    </section>
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>Who we are</h2>
+                        <ul>
+                            <li>Jonathon Rogles, Founder</li>
+                            <li>User Experience Specialist</li>
+                            <li>Designer</li>
+                            <li>Full-Stack Developer</li>
+                            <li>Digital Marketing Strategist</li>
+                        </ul>
+                    </section>
+                </div>
             </section>
 
-            <section id="skills">
-                <h1>Skills</h1>
-                <section>
-                    <h2>UX &amp; UI</h2>
-                    <ul>
-                        <li>User Experience Design</li>
-                        <li>Scenarios/Personas</li>
-                        <li>Information Architecture</li>
-                        <li>User Interface Design</li>
-                        <li>Usability Testing</li>
-                        <li>SEO</li>
-                        <li>Semantic Markup</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Dev</h2>
-                    <ul>
-                        <li>MEAN</li>
-                        <li>LAMP</li>
-                        <li>HTML5</li>
-                        <li>CSS3/Sass</li>
-                        <li>JS/ES6</li>
-                        <li>AngularJS</li>
-                        <li>NodeJS</li>
-                        <li>React/Redux</li>
-                        <li>Restful APIs</li>
-                        <li>Docker</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Workflow &amp; Misc.</h2>
-                    <ul>
-                        <li>Agile/Scrum</li>
-                        <li>Adobe XD</li>
-                        <li>Adobe Suite</li>
-                        <li>Gulp/Grunt</li>
-                        <li>NPM</li>
-                        <li>Git</li>
-                        <li>HTML5 Video</li>
-                        <li>Digital Project Ideation</li>
-                        <li>Digital Marketing Strategy</li>
-                    </ul>
-                </section>
-            </section>
+            
 
-            <section id="Philosophy">
+            <section id="Philosophy" class="philosophy">
                 <h1>Philosophy</h1>
-                <section>
+                <div class="row middle-xs">
+                <section class="col-xs-12 col-sm-8">
                     <h2>Solid, Useful, and Beautiful - The Virtuvian Triad</h2>
                     <p>The ancient Roman architect Virtuvius, distilled three virtues of design: firmitas, utilitas, venustas.</p>
                     <p>Anything created should be structurally sound, useful, and aesthethically pleasing. Each virtue as integral of a component to the success of the project as the next, like the borromean rings seen across our site.</p>
                     <p>We aim to channel Virtuvius into the digital sphere, with the slight adjustment of focusing on usability first.</p>
                     <p>We take pride in creating durable and maintainable development work, and partnering it with beautiful designs that will see continued success over time. However, we emphasize focusing on the usability aspect first, which enhances the other two virtues and takes the entire project to the new heights.</p>
                     <p>Don't just be the first to market, be the first to market with your best foot forward. Your users and time will dictate what is successful, be ahead of the competition from the start.</p>
-
                 </section>
-                <img alt="borromean rings" src="img/" />
+                <div class="col-xs-12 col-sm-4"><img src="img/borromean-rings.svg" alt="borromean rings"></div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <h1>Skills</h1>
+                <div class="row">
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>UX &amp; UI</h2>
+                        <ul>
+                            <li>User Experience Design</li>
+                            <li>Scenarios/Personas</li>
+                            <li>Information Architecture</li>
+                            <li>User Interface Design</li>
+                            <li>Usability Testing</li>
+                            <li>SEO</li>
+                            <li>Semantic Markup</li>
+                        </ul>
+                    </section>
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>Dev</h2>
+                        <ul>
+                            <!--<li>MEAN</li>-->
+                            <li>LAMP</li>
+                            <li>HTML5</li>
+                            <li>CSS3/Sass</li>
+                            <li>JS/ES6</li>
+                            <li>AngularJS</li>
+                            <!--<li>NodeJS</li>
+                            <li>React/Redux</li>
+                            <li>Restful APIs</li>
+                            <li>Docker</li>-->
+                        </ul>
+                    </section>
+                    <section class="col-xs-12 col-sm-4">
+                        <h2>Workflow &amp; Misc.</h2>
+                        <ul>
+                            <li>Agile/Scrum</li>
+                            <li>Adobe XD</li>
+                            <li>Adobe Suite</li>
+                            <li>Gulp/Grunt</li>
+                            <li>NPM</li>
+                            <li>Git</li>
+                            <li>HTML5 Video</li>
+                            <li>Digital Project Ideation</li>
+                            <li>Digital Marketing Strategy</li>
+                        </ul>
+                    </section>
+                </div>
             </section>
         </main>
-
+        
         <footer>
-            <p>&copy; <span class=copyright-year>2017</span> Rogles Digital, LLC. All rights reserved.</p>
+            <p>&copy; <span class=copyright-year>2017</span> Rogles Digital, LLC.</p>
+            <p>All rights reserved.</p>
         </footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -125,11 +132,17 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108399542-1"></script>
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-108399542-1');
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
+
+
+
