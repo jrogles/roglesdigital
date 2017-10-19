@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
-        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -66,9 +65,9 @@
                         <label for="insightly_background">Brief summary to get us started:</label>
                             <textarea id="insightly_background" name="background" >What's on your mind?</textarea>
                     </fieldset>
-                    <div class="g-recaptcha" data-size="compact" data-sitekey="6LeOITUUAAAAAGQlNvRTxQ3-QRUtns9C8UFvlB4t"></div>
+                    <input type="hidden" id="deadfall" value=""/>
                     <div class="gr-btns">
-                    <button class="gr-btn" form="insightly_web_to_contact" type="submit" value="Submit">
+                    <button class="gr-btn" id="contact-submit" form="insightly_web_to_contact" type="submit" value="Submit">
                         <h2>Submit</h2>
                     </button>
                     </div>
