@@ -1,13 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="1574.54 114.297 806.162 811.405"><defs>
-<filter id="f1">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
-    <feOffset dx="2" dy="8" />
-    <feMerge>
-        <feMergeNode />
-        <feMergeNode in="SourceGraphic" />
-    </feMerge>
-  </filter>
-	<style>.a{opacity:0.75;}.b{fill:none;stroke:#acebae;stroke-width:9px;}/* animation */
+<style>.a{opacity:0.75;}.b{fill:none;stroke:#acebae;stroke-width:9px;}/* animation */
 .rotation-animation{
   animation: rotateRings ease-in-out 10s;
   animation-iteration-count: infinite;
@@ -44,4 +36,4 @@
 }
 
 
-}</style></defs><g class="rotation-animation" filter="url(#f1)"><g class="a" transform="translate(1644.087 183.848)"><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(152.384 82.143) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(-63.844 155.125) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(106.733 303.613) rotate(-18.651)"/></g></g></svg>
+}</style></defs><g class="rotation-animation"><g class="a" transform="translate(1644.087 183.848)"><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(152.384 82.143) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(-63.844 155.125) rotate(-18.651)"/><circle class="b" cx="228.253" cy="228.253" r="228.253" transform="translate(106.733 303.613) rotate(-18.651)"/></g></g></svg>
