@@ -98,7 +98,8 @@ textarea {
    ========================================================================== */
 
 body {background-color: #363942;background: url(../img/hex.svg) 31px 56px/5.5%  #363942;}
-body > header, body > footer, main {background-color: #363942;background-color: rgba(54,57,66,.95)}
+body > header, main {background-color: #363942;background-color: rgba(54,57,66,.95)}
+body > footer {background-color: #363942;}
 section {position: relative;}
 main {}
 footer {padding: 2em;}
@@ -131,7 +132,7 @@ header[role="banner"] button::after {
     background-color: #BED73C;
     background-color: rgba(190,215,60,.9);
 }*/
-header[role="banner"] h1 {font-size: 1.25em;font-weight:400;margin: 0;text-align: center;padding: .5em;text-shadow:2px 8px 6px rgba(0,0,0,0.2),.75px .75px 0 rgba(190,215,60,.9);}
+header[role="banner"] h1 {font-size: 1.25em;font-weight:400;margin: 0;text-align: center;padding: .5em;}
 header[role="banner"] nav[role="navigation"] {margin: 0 auto;max-width: 1920px;}
 header[role="banner"] nav[role="navigation"] a {
     cursor:pointer;
@@ -143,21 +144,21 @@ header[role="banner"] nav[role="navigation"] a {
     transition: .15s ease-in-out;
 }
 header[role="banner"] nav[role="navigation"] a.active, header[role="banner"] nav[role="navigation"] a:hover {
-    background-color: rgba(190,215,60,.85);
+    background-color: rgba(121,201,58,.85);
     transition: .25s ease-in-out;
 }
 
 
 footer {border-top: 2px solid #ffffff}
-footer p {font-size: 1.15em;color: #BED73C;text-align: center;margin: 0}
+footer p {font-size: 1.15em;color: #79c93a;text-align: center;margin: 0}
 
-main h1 {font-size: 2.5em;font-weight: 900;text-align: center;margin-top:0;margin-bottom:.25em;text-shadow:2px 8px 6px rgba(0,0,0,0.2)}
-main h2 {font-size: 1.250em;text-align: center;color:#BED73C;text-shadow:2px 4px 6px rgba(0,0,0,0.2),0px -2px 15px rgba(255,255,255,0.3);}
+main h1 {font-size: 2.5em;font-weight: 900;text-align: center;margin-top:0;margin-bottom:.25em;}
+main h2 {font-size: 1.250em;text-align: center;color:#79c93a;}
 section section p, section section li {color: #363942}
 
 
 /* home */
-.intro h1 {font-size: 3.125em;color: #BED73C;margin-right:25%;text-align: left;
+.intro h1 {font-size: 3.125em;color: #79c93a;margin-right:25%;text-align: left;
     text-shadow: 1px 1px 0px rgba(255,255,255,.9),2px 8px 6px rgba(0,0,0,0.2);}
 .intro h1 span {display: block}
 .intro p {font-weight: 400;margin-right:25%;}
@@ -183,17 +184,17 @@ section section p, section section li {color: #363942}
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #BED73C;
-    background-color: rgba(190,215,60,1);
+    background-color: #79c93a;
+    background-color: rgba(121,201,58,1);
     transition: .125s ease-in-out;
 }
 .wh-btns a:hover::after, .wh-btns a:active::after {
-    background-color: rgba(190,215,60,.75);
+    background-color: rgba(121,201,58,.75);
     transition: .25s ease-in-out;
 }
 .gr-btns {padding-bottom: 3.125em;}
-.gr-btns .gr-btn {width:100%;background-color: #BED73C;background-color: rgba(190,215,60,.8);display: block;transition: .125s ease-in-out;box-shadow: 2px 8px 6px rgba(0,0,0,0.2);}
-.gr-btns .gr-btn:hover,.gr-btns .gr-btn:active {background-color: rgba(190,215,60,1);transition: .25s ease-in-out;}
+.gr-btns .gr-btn {width:100%;background-color: #79c93a;background-color: rgba(121,201,58,1);display: block;transition: .125s ease-in-out;box-shadow: 2px 8px 6px rgba(0,0,0,0.2);}
+.gr-btns .gr-btn:hover,.gr-btns .gr-btn:active {background-color: rgba(121,201,58,1);transition: .25s ease-in-out;}
 .gr-btns h2 {font-size: 1.875em;color: #ffffff;margin: 0;padding: 2px;}
 
 /* about */
@@ -229,7 +230,10 @@ form button {margin-top: 1em;}
 
 @media 
     (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi) { 
+    (min-resolution: 144dpi) { 
+    header[role="banner"] h1 a {text-shadow:2px 8px 6px rgba(0,0,0,0.2), 1px 1px 0 rgba(121,201,58,.9);}
+    main h1 {text-shadow:2px 8px 6px rgba(0,0,0,0.2)}
+    main h2 {text-shadow:2px 4px 6px rgba(0,0,0,0.2),0px -2px 15px rgba(255,255,255,0.3);}
     .intro {
         background: url("../img/borromean-rings@2x.png") top 25% right 0%/45% no-repeat;
         background: url("../img/borromean-rings-animated.svg") top 25% right 0%/45% no-repeat, linear-gradient(transparent, transparent);
@@ -246,6 +250,7 @@ form button {margin-top: 1em;}
 }
 @media (min-width: 64em) {
     .intro p {font-weight: 400;margin-right:35%;}
+    .short-about {margin: 0, auto;width: 60%}
    .services ul li {font-size: .75em;}
    .services section ul {padding: 1em 1em 1em 2em;margin: 0;}
    footer {padding: 1em;}
