@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  &--25 {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  &--33 {
+    grid-template-columns: 33.33% 66.66%;
+  }
+  &--50 {
+    grid-template-columns: 50% 50%;
+  }
+  &--66 {
+    grid-template-columns: 66.66% 33.33%;
+  }
+  &--100 {
+    grid-template-columns: 100%;
+  }
+}

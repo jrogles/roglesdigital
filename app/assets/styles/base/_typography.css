@@ -1,0 +1,32 @@
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font-family;
+  font-weight: $bold;
+  line-height: $heading-line-height;
+  color: $color-lighter;
+  margin-top: 0.25em;
+  margin-bottom: .5em;
+}
+p,li,a,label,input,select,button,fieldset,textarea {
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  color: $color-lighter;
+}
+
+h1 {font-size: 1.750em}
+h2 {font-size: 1.500em}
+h3 {font-size: 1.250em}
+h4 {font-size: 1em}
+h5 {font-size: 0.875em}
+h6 {font-size: 0.750em}
+p  {font-size:  0.813em}
+li {font-size: 0.813em}
+
+p {max-width: $char-limit;}
+
+a {text-decoration: none;cursor: pointer}
+
+
+                            html {font-size: 1rem;}
+@media (min-width: 500px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1500px) {html {font-size: 1.5em}}

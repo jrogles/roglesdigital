@@ -1,0 +1,35 @@
+/* Do Not Edit modules/_sprite directly, edit gulp/template/sprite */
+
+  .icon {
+    background-image: url('../../assets/img/sprites/sprite-2e934a38.svg');
+  }
+
+  .no-svg .icon {
+    background-image: url('../../assets/img/sprites/sprite-2e934a38.png');
+  }
+
+  .icon--borromean-rings {
+    width: 808.16px;
+    height: 813.41px;
+    background-position: 0 0;
+  }
+  .icon--borromean-rings-animated {
+    width: 702px;
+    height: 702px;
+    background-position: 99.89616810877627% 0;
+  }
+  .icon--hex {
+    width: 58px;
+    height: 102px;
+    background-position: 55.6200963523744% 84.1726618705036%;
+  }
+  .icon--ic_chevron_right {
+    width: 122px;
+    height: 122px;
+    background-position: 0 99.92751842751842%;
+  }
+  .icon--ic_menu {
+    width: 26px;
+    height: 26px;
+    background-position: 58.32727272727273% 77.14285714285714%;
+  }

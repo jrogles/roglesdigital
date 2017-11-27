@@ -1,0 +1,36 @@
+.hero{
+  background:
+    url("/assets/img/icons/borromean-rings.svg")
+    top 25% right 8%/45% no-repeat;
+  background:
+    url("/assets/img/icons/borromean-rings-animated.svg")
+    top 25% right 8%/45% no-repeat,
+    linear-gradient(transparent, transparent);
+
+  @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 144dpi) {
+    .hero {
+        background: url("../img/borromean-rings@2x.png")
+          top 25% right 0%/45% no-repeat;
+        background: url("../img/borromean-rings-animated.svg")
+          top 25% right 0%/45% no-repeat,
+          linear-gradient(transparent, transparent);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1.2;
+    color: $color1;
+    width: 8ch;
+    text-align: left;
+    text-shadow:  1px 1px 0px rgba($color-lighter,.9),
+                  2px 8px 6px rgba($color-darker,0.2);
+  }
+  &__copy {
+
+  }
+
+}

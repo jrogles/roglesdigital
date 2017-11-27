@@ -1,0 +1,36 @@
+$max-width: 1280px;
+
+/* Colors */
+$color1: #79C93A;
+$color2: #ACEBAE;
+$color3: #363942;
+
+$color-darker: #222222;
+$color-dark: rgba($color-darker, .8);
+$color-lighter: #FFFFFF;
+$color-light: rgba($color-lighter, .8);
+
+/* Typography */
+$base-font-family: 'Ropa Sans Pro', Helvetica, Arial, san-serif;
+$heading-font-family: $base-font-family;
+$char-limit: 60ch;
+
+/* Font Weights */
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+/* Base Font */
+$base-font-weight: $regular;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$heading-line-height: 1.4;
+
+/* Focus */
+$focus-outline-color: transparentize($color1, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+/* Animations */
+$base-duration: 150ms;

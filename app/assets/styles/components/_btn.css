@@ -1,0 +1,105 @@
+.btn {
+    text-align: center;
+    transition: .15s ease-in-out;
+
+    &:link{
+        transition: .15s ease-in-out;
+    }
+    &:hover{
+        transition: .25s ease-in-out;
+    }
+    &:active{
+        transition: .25s ease-in-out;
+    }
+    &:visited{
+        transition: .15s ease-in-out;
+    }
+
+    &--w-icon{
+        margin-bottom: 1em;
+        padding: .875em;
+        position: relative;
+        display: block;
+        text-align: left;
+        line-height: $heading-line-height;
+        color: $color-darker;
+        background-color: $color-lighter;
+        box-shadow: 2px 8px 6px rgba($color-darker,0.2);
+
+        &::after {
+            width: 3.125em; height: 3.125em;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: $color1;
+            background-color: rgba($color1,1);
+            transition: .125s ease-in-out;
+        }
+        &:link{
+
+        }
+        &:hover{
+            &::after{
+                background-color: rgba($color1,.75);
+                transition: .25s ease-in-out;
+            }
+        }
+        &:active{
+            &::after{
+
+            }
+        }
+        &:visited{
+            &::after{
+
+            }
+        }
+    }
+    &--w-icon--arrow::after{
+        content: url("/assets/img/ic_chevron_right.png");
+        content: url("/assets/img/icons/ic_chevron_right.svg");
+        @media
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 144dpi) {
+                &--w-icon--arrow::after {
+                    content: url("../img/ic_chevron_right@2x.png");
+                    content: url("../img/ic_chevron_right.svg");
+                }
+        }
+    }
+
+    &--wide{
+        width:100%;
+        font-size: 1.875em;
+        margin: 0;
+        padding: 2px;
+        display: block;
+        transition: .125s ease-in-out;
+        box-shadow: 2px 8px 6px rgba($color-darker,0.2);
+    }
+
+    &--lighter{
+        background-color: $color-lighter;
+        color: $color-darker;
+    }
+
+    &--color1{
+        background-color: $color1;
+        background-color: rgba($color1, .8);
+        color: #ffffff;
+        &:link{
+
+        }
+        &:hover{
+            background-color: rgba($color1,1);
+
+        }
+        &:active{
+
+        }
+        &:visited{
+
+        }
+    }
+}

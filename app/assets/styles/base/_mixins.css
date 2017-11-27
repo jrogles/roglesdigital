@@ -1,0 +1,17 @@
+@define-mixin atS {
+	@media (min-width: 48em) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atL {
+	@media (min-width: 64em) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atXL {
+	@media (min-width: 76em) {
+		@mixin-content;
+	}
+}

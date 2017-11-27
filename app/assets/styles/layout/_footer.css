@@ -1,0 +1,11 @@
+.footer {
+  background-color: $color3;
+  padding: 1em;
+  border-top: 2px solid #ffffff;
+
+  &__copyright {
+    text-align: center;
+    margin: 0 auto;
+    color: $color1;
+  }
+}

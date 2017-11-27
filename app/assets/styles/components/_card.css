@@ -1,0 +1,24 @@
+.card {
+  background-color: $color-lighter;
+  height: 100%;
+  box-shadow: 2px 8px 6px rgba($color-darker,0.2);
+
+  &__title {
+    max-width: 100%;
+    text-align: center;
+    background-color: $color3;
+    padding:.5em 0;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+  }
+  &__list {
+    padding: 1em 1em 1em 1.5em;
+    margin: 0;
+    font-size: 1em;
+
+    & li {
+      color: $color-darker;
+    }
+  }
+}
