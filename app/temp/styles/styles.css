@@ -1558,7 +1558,7 @@ main p {
   }
 
 .content {
-  max-width: 420px;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
 
@@ -1976,15 +1976,15 @@ form button {margin-top: 1em;}
 }
 
 .reveal-item {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
   opacity: 0;
-  -webkit-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
+  -webkit-transition: all 1.25s ease-out;
+  transition: all 1.25s ease-out;
 }
 
 .reveal-item--is-visible {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
